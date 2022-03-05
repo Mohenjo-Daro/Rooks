@@ -1,8 +1,8 @@
 board = []
 
 for row in range(3):
-    board.append([" ", " ", " "])
-    
+    board.append([" ", " ", " "])   
+     
 turn = True
 while True:
     row = input()
@@ -13,6 +13,7 @@ while True:
         board[int(row) - 1][int(column) - 1] = "x"
 
     turn = not turn
+
 
     for row in board:
         print(row)
