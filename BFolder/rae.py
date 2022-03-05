@@ -2,7 +2,9 @@ board = []
 
 for row in range(3):
     board.append([" ", " ", " "])
-turn = Truewhile True:
+    
+turn = True
+while True:
     row = input()
     column = input()
     if(turn):
