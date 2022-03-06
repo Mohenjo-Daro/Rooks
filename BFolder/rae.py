@@ -1,8 +1,3 @@
-from curses import COLOR_RED, color_content
-from tabnanny import check
-from turtle import color
-
-
 board = []
 
 print("Welcome to tic tac toe tea teh!")
@@ -28,7 +23,7 @@ while True:
                 else:
                     print("Already taken, take another turn")
             else:
-                if(board[int(row) - 1][int(column) -1] != "0"):
+                if (board[int(row) - 1][int(column) -1] != "0"):
                     if(board[int(row) - 1][int(column) - 1] != "x"):
                         board[int(row) - 1][int(column) -1] = "x"
                         turn = not turn
@@ -43,3 +38,5 @@ while True:
     else:
         print("Out of bounds, take another turn")
 
+    for row in board:
+        print(row)
