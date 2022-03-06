@@ -1,6 +1,14 @@
+from curses import COLOR_RED, color_content
+from turtle import color
+
+
 board = []
 
-for row in range(10):
+print("Welcome to tic tac toe tea teh!")
+print("Same as tic tac toe, but on a 5x5 grid.")
+print("Match 4 first to win!")
+
+for row in range(5):
     board.append([" ", " ", " ", " ", " "])   
      
 turn = True
