@@ -10,16 +10,22 @@ while True:
     if(int(row) >= 1 and int(row) <= 3):
         if(int(column) >= 1 and int(column) <= 3):
             if (turn):
-                board[int(row) - 1][int(column) -1] = "0"
-                turn = not turn
+                if (board[int(row) - 1][int(column) -1] != "0" or "x"):
+                    board[int(row) - 1][int(column) -1] = "0"
+                    turn = not turn
+                else:
+                    print("Already taken, take another turn")
             else:
-                board[int(row) - 1][int(column) - 1] = "x"
-                turn = not turn
+                if (board[int(row) - 1][int(column) -1] != "0" or "x"):
+                    board[int(row) - 1][int(column) - 1] = "x"
+                    turn = not turn
+                else:
+                    print("Already taken, take another turn")
         
         else:
-            print("Error, take another turn")
+            print("Out of bounds, take another turn")
     else:
-        print("Error, take another turn")
+        print("Out of bounds, take another turn")
 
 
     for row in board:
