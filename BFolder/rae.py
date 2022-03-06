@@ -1,14 +1,14 @@
 board = []
 
-for row in range(3):
-    board.append([" ", " ", " "])   
+for row in range(10):
+    board.append([" ", " ", " ", " ", " "," ", " ", " ", " ", " "])   
      
 turn = True
 while True:
     row = input()
     column = input()
-    if(int(row) >= 1 and int(row) <= 3):
-        if(int(column) >= 1 and int(column) <= 3):
+    if(int(row) >= 1 and int(row) <= 10):
+        if(int(column) >= 1 and int(column) <= 10):
             if (turn):
                 if (board[int(row) - 1][int(column) -1]!="0"):
                     if (board[int(row) - 1][int(column) -1]!="x"):
