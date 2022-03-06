@@ -1,4 +1,5 @@
 from curses import COLOR_RED, color_content
+from tabnanny import check
 from turtle import color
 
 
@@ -41,17 +42,4 @@ while True:
             print("Out of bounds, take another turn")
     else:
         print("Out of bounds, take another turn")
-
-
-    for row in board:
-        print(row)
-
-    if(board[int(row)]: "x" => 4):
-        print("X wins!")
-    if(board[int(row)]: "0" => 4):
-        print("X wins!")
-    if(board[int(column)]: "x" => 4):
-        print("X wins!")
-    if(board[int(column)]: "0" => 4):
-        print("X wins!")
 
