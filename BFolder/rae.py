@@ -1,5 +1,6 @@
 board = []
 
+<<<<<<< HEAD
 print("Welcome to tic tac toe tea teh!")
 print("Same as tic tac toe, but on a 5x5 grid.")
 print("Match 5 first to win!")
@@ -71,10 +72,25 @@ while not gameOver:
         
         else:
             print("Out of bounds, take another turn")
+=======
+for row in range(3):
+    board.append([" ", " ", " "])
+turn = Truewhile True:
+    row = input()
+    column = input()
+    if(turn):
+        board[int(row) - 1][int(column) -1] = "0"
+>>>>>>> main
     else:
-        print("Out of bounds, take another turn")
+        board[int(row) - 1][int(column) - 1] = "x"
+
+    turn = not turn
 
     for row in board:
         print(row)
+<<<<<<< HEAD
     
     check(board)
+=======
+    
+>>>>>>> main
