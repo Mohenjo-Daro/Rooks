@@ -16,11 +16,16 @@ while True:
                         turn = not turn
                     else:
                         print("Already taken, take another turn")
+                else:
+                    print("Already taken, take another turn")
             else:
                 if (board[int(row) - 1][int(column) -1] != "0"):
                     if(board[int(row) - 1][int(column) - 1] != "x"):
                         board[int(row) - 1][int(column) -1] = "x"
                         turn = not turn
+                    else:
+                        print("Already taken, take another turn")
+
                 else:
                     print("Already taken, take another turn")
         
