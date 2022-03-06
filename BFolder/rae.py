@@ -27,7 +27,7 @@ while True:
                 else:
                     print("Already taken, take another turn")
             else:
-                if (board[int(row) - 1][int(column) -1] != "0"):
+                if(board[int(row) - 1][int(column) -1] != "0"):
                     if(board[int(row) - 1][int(column) - 1] != "x"):
                         board[int(row) - 1][int(column) -1] = "x"
                         turn = not turn
@@ -45,4 +45,13 @@ while True:
 
     for row in board:
         print(row)
+
+    if(board[int(row)]: "x" => 4):
+        print("X wins!")
+    if(board[int(row)]: "0" => 4):
+        print("X wins!")
+    if(board[int(column)]: "x" => 4):
+        print("X wins!")
+    if(board[int(column)]: "0" => 4):
+        print("X wins!")
 
